@@ -1,0 +1,55 @@
+<script>
+    //coersão de tio
+    console.log('9' + 5)
+    //conversão
+    console.log(Number('9')+5)
+    //transformando String em Número
+    console.log(Number('20')+10)
+    //Transformando numero em uma String
+    let number = 321
+    console.log(String(number))
+    //Contar quantos caracteres tem uma palavra
+    let word = "Paralelepipedo"
+    console.log(word.length)
+    //Quantos digitos tem um numero
+    console.log(String(number).length)
+    //Transformando um número quebrado com 2 casas decimais
+    //e trocar o ponto pela virgula
+    let numer2 = 3453453456456456456.333333333
+    console.log(numer2.toFixed(2).replace(".",","))
+    //Manipulando metras maisusculas e minusculas
+    let maisusculas = "Programar é muito bom"
+    console.log(maisusculas.toUpperCase())
+    console.log(maisusculas.toLocaleLowerCase())
+    // criando um vetor com uma frase
+    let phrase = "Eu quero viver o Amor!"
+    let myArray = phrase.split(" ")
+    console.log(myArray)
+    //Transforme o arraay em um texto separando pelo underline
+    let phraseWithUnderscore = myArray.join("_")
+    console.log(phraseWithUnderscore)
+    //encontrando uma palavra dentro de um texto
+    let findWord = "Eu quero viver o amor!"
+    console.log(findWord.includes("Amor")) // case sensitive
+    //transformando palavra em um array
+    let wordToArray = "Manipulação"
+    console.log(Array.from(wordToArray))
+    //manipulando array
+    let techs = ["html", "css", "js"]
+    console.log(techs.push("Nodejs")) // adicionando elemento no final do array
+    console.log(techs.unshift("sql")) // Adicionando elemento no começo do array
+    console.log(techs.pop()) // apagando ultimo elemento
+    console.log(techs.shift()) // apagando Primeiro elemento
+    console.log(techs.slice(1,3)) //seleciona o inicio do elemento até o fim
+    console.log(techs.splice(1, 2))//remover 1 ou mais elementos dentro do array
+    console.log(techs.indexOf('css')) // descobrindo o index de um elemento especifico dentro de um array
+    //pesquisando o index de um elemento e apagando ele
+    console.log(techs)
+    let index = techs.indexOf('d')
+    techs.splice(index, 1)
+    console.log(techs)
+
+
+
+    
+</script>
