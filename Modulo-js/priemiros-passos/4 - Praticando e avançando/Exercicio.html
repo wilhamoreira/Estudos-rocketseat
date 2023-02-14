@@ -1,0 +1,50 @@
+<script>
+
+//declre uma variavél
+var weight
+//qual o timpo dela?
+console.log(typeof weight) //undefined
+
+//declare variaveis e atribua valores a ela
+let name = "Wilha"
+let age = 25
+let start = 3.0
+let isSubscribed = true
+
+let student = {
+    name: 'Cristiano',
+    age: 38,
+    weight:  3.2,
+    isSubscribed:  false
+}
+// imprima os dados do students
+console.log(`${student.name} tem ${age} de idade e pesa ${student.weight}`)
+
+//declare uma variavel do tipo array e de nome students e atribua nemhum valor
+let students = []
+// atribua o valor student dentro do array
+students = [
+    student
+]
+console.log(students)
+// mostr a primeira posição do array students
+console.log(students[0])
+
+//crie um novo estudante e coloque ele na posição 1 do array students
+const wilha = {
+    name: 'Wilha',
+    age: 25,
+    weight:120
+}
+
+students[1] = wilha
+
+console.log(students)
+
+//qual a resposta o navegador vai  devolver ?
+console.log(a)
+var a = 1
+// Será undefined, pois a a variavel criado com a palavra reservada "var"
+// irá ser interpretada ao iniciar o codigo, porem a aribuição só será feita apos o print
+//logo ela iniciará apenas declarada, fazendo dela uma variavel indefinida
+</script>
