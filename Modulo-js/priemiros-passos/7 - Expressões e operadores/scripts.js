@@ -1,32 +1,28 @@
-/*
-
-    Operadores Aritiméticos
-    divisão
-    soma
-    subtração
-
-
-    resto da divisão
-    incremento
-    decremento
-    exponencial
+/* 
+	Todos os valores abaixo seriam representados como false em um boolean.
+		true
+    {}
+    []
+    1
+    3.23
+    "0"
+    "false"
+    -1
+    Infinity
+    -Infinity
 */
 
-//divisão
-console.log(32/31)
-//soma
-console.log(32+31)
-//subtração
-console.log(32-1)
+console.log( Infinity ? 'verdadeiro' : 'falso' )
 
-//resto da divisão
-let remainder = 11 % 9
-console.log(remainder)
-//incremento
-let incremento = 3
-incremento++
-console.log(incremento)
-//decremento
-console.log(--incremento)
-//exponencial
+/*
+	Todos os valores abaixo seriam representados como false em um boolean.
+		false
+    0
+    -0
+    ""
+    null
+    undefined
+    NaN
+*/
 
+console.log( NaN ? 'verdadeiro' : 'falso' )

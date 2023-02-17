@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tp-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade01</title>
+</head>
+<body>
+    
+    <script>
+        /*
+        Crie um algoritmo que transforme as notas do sistema 
+        numerico para sistema de notas emcaracteres do tipo
+        A B C
+        * de 90 para cima - A
+        * entre 80 - 89 - B
+        * entre 70 - 79 - c
+        * entre 60 - 69 - D
+        * Menor que 60  - F
+        */
+        
+
+        
+        function conversaoNota(nota){
+            let notaA = nota >= 90 && nota <= 100
+            let notaB = nota >= 80 && nota <= 89
+            let notaC = nota >= 70 && nota <= 79
+            let notaD = nota >= 60 && nota <= 69
+            let notaF = nota < 60 && nota >= 0
+            let notaConvertida
+
+
+            if (notaA){
+                notaConvertida = "A"
+            } else if(notaB){
+                notaConvertida = "B"
+            } else if(notaC){
+                notaConvertida = "C"
+            } else if(notaD){
+                notaConvertida = "D"
+            } else if(notaF){
+                notaConvertida = "F"
+            } else{
+                console.log('Nota inválida')
+            }
+
+            return notaConvertida
+        }
+
+        console.log(conversaoNota(101))
+        console.log(conversaoNota(-1))
+        console.log(conversaoNota(0))
+        console.log(conversaoNota(1))
+        console.log(conversaoNota(45))
+        console.log(conversaoNota(60))
+        console.log(conversaoNota(61))
+        console.log(conversaoNota(75))
+        console.log(conversaoNota(85))
+        console.log(conversaoNota(95))
+
+
+
+
+    </script>
+</body>
+</html>
