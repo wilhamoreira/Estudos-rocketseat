@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    crie um objeto que possua 2 propriedades, ambas do tipo array:
+      * receitas : []
+      * despesas : []
+    Agora, crie uma função que irá calcular o total de receitas e despesas
+    e irá mostrar uma mensagem se a família está com sald positivo  ou
+    negativo, seguido do valor do saldo.
+    */
+
+    let familia = {
+      receitas: [2500, 3200, 250.43, 360.45],
+      despesas: [329.34, 128.45, 176.87, 1450.00]
+    }
+
+    function sun(array){
+      let total = 0
+
+      for (let value of array){
+        total += value
+      }
+
+      return total
+
+    }
+
+    function calcularBalanco(){
+      const calculoReceitas = sun(familia.receitas)
+      const calculoDespesas = sun(familia.despesas)
+
+      const total = calculoReceitas - calculoDespesas
+
+      const tudoOk = total >=0
+
+
+      if(tudoOk){
+        console.log("Seu saldo é positivo")
+      } else{
+        console.log("seu saldo é negativo")
+      }
+
+    }
+
+    calcularBalanco()
+  </script>
+</body>
+</html>
