@@ -1,0 +1,10 @@
+.box{
+    border: 1px dashed red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box div{
+    border: 1px solid;
+    width: 180px;
+}
